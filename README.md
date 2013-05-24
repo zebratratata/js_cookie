@@ -1,6 +1,6 @@
-# function for work with cookie (reading, writing, deleting)
-## Examples
-set:
+## function for work with cookies (reading, writing, deleting)
+
+###set:
 
 cookie('mytestcookie', 'value', {
     path: '/',

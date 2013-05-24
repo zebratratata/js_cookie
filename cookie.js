@@ -1,5 +1,5 @@
-(function () {
-    window.cookie = function cookie(name, value, params) {
+(function (window, fn) {
+    window[fn] = function (name, value, params) {
         if (arguments.length == 1) {
             return getCookie(name);
         }
@@ -54,4 +54,4 @@
         return str.replace(/^\s*/, '').replace(/\s*$/, '');
     }
 
-})();
+})(window, 'cookie');

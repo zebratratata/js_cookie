@@ -2,16 +2,38 @@
 ## Examples
 set:
 
-
 cookie('mytestcookie', 'value', {
-    path: '/',				* set cookie to all pages *
-    domain: '/mydomain', 	* set domain *
-    secure: true,
-    expires: 10             *set to 10 days, or can set date (new Date())*
+    path: '/',
+    expires: 10
 });
 
-get:
-    var value = cookie('mytestcookie');  // return cookie value or null
+### path
 
-remove
+    path: '/'
+
+set cookie to all pages
+
+### expires
+
+    expires: 10
+
+set to 10 days, or can set date (new Date())
+
+### domain
+    domain: 'mydomain'
+
+The domain where the cookie is valid
+
+### secure
+
+    secure: true
+
+The cookie transmission requires a secure protocol (https)
+
+###get:
+    var value = cookie('mytestcookie');
+
+return cookie value or null
+
+###remove
     cookie('mytestcookie', null);

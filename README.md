@@ -2,10 +2,7 @@
 
 ###set:
 
-    cookie('mytestcookie', 'value', {
-        path: '/',
-        expires: 10
-    });
+    cookie('mytestcookie', 'value', { path: '/',  expires: 10  });
 
 ### path
 
